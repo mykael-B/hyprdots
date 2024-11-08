@@ -1,0 +1,102 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: rgba(43, 48, 59, 0);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3f3f3f;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+/*
+ __   __  _______  ______   __   __  ___      _______  _______         ______    ___   _______  __   __  _______
+|  |_|  ||       ||      | |  | |  ||   |    |       ||       |       |    _ |  |   | |       ||  | |  ||       |
+|       ||   _   ||  _    ||  | |  ||   |    |    ___||  _____| ____  |   | ||  |   | |    ___||  |_|  ||_     _|
+|       ||  | |  || | |   ||  |_|  ||   |    |   |___ | |_____ |____| |   |_||_ |   | |   | __ |       |  |   |
+|       ||  |_|  || |_|   ||       ||   |___ |    ___||_____  |       |    __  ||   | |   ||  ||       |  |   |
+| ||_|| ||       ||       ||       ||       ||   |___  _____| |       |   |  | ||   | |   |_| ||   _   |  |   |
+|_|   |_||_______||______| |_______||_______||_______||_______|       |___|  |_||___| |_______||__| |__|  |___|
+*/
+
+.modules-right {
+    border: 2px solid;
+    border-color: #d4be98;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgba(60, 56, 54, 0.25);
+    margin: 5px 5px 0px 0px;
+    padding: 3px;
+}
+#pulseaudio,
+#cpu,
+#backlight,
+#battery,
+#network {
+    color: #d4be98;
+    padding: 0px 10px 0px 5px;
+}
+
+/*
+ __   __  _______  ______   __   __  ___      _______  _______         _______  _______  __    _  _______  ______    _______
+|  |_|  ||       ||      | |  | |  ||   |    |       ||       |       |       ||       ||  |  | ||       ||    _ |  |       |
+|       ||   _   ||  _    ||  | |  ||   |    |    ___||  _____| ____  |       ||    ___||   |_| ||_     _||   | ||  |    ___|
+|       ||  | |  || | |   ||  |_|  ||   |    |   |___ | |_____ |____| |       ||   |___ |       |  |   |  |   |_||_ |   |___
+|       ||  |_|  || |_|   ||       ||   |___ |    ___||_____  |       |      _||    ___||  _    |  |   |  |    __  ||    ___|
+| ||_|| ||       ||       ||       ||       ||   |___  _____| |       |     |_ |   |___ | | |   |  |   |  |   |  | ||   |___
+|_|   |_||_______||______| |_______||_______||_______||_______|       |_______||_______||_|  |__|  |___|  |___|  |_||_______|
+*/
+
+.modules-center {
+    border: 2px solid;
+    border-color: #d4be98;
+    border-radius: 10px;
+    background-color: rgba(60, 56, 54, 0.25);
+    padding: 3px 3px 3px 3px;
+    margin: 5px 0px 0px 10px;
+    color: #d4be98;
+}
+
+.modules-left {
+    border: 2px solid;
+    border-radius: 0px 10px 10px 0px;
+    border-color: #d4be98;
+    background-color: rgba(60, 56, 54, 0.25);
+    /*  padding: 3px; */
+    margin: 5px 0px 0px 5px;
+}
+#workspaces button {
+    padding: 0px;
+    margin: 0px;
+    color: #d4be98;
+}
+
+#workspaces button.active {
+    padding: 0px;
+    margin: 0.25px;
+    color: #3c3836;
+    background-color: #d4be98;
+}
